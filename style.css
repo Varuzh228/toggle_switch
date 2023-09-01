@@ -1,0 +1,106 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+background-color:#238695;
+ 
+}
+
+.switch{
+
+ position: absolute;
+ width: 350px;
+ height: 125px;
+ left:0;
+ right:0;
+ margin:0 auto;
+top:calc(50% - 120px);
+}
+
+.switch__slider .try > p{
+    font-weight: 300;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    position:absolute;
+    left: 45px;
+    top:30%;
+    color:#3fc33f;
+}
+
+.switch__input{
+width: 0;
+height: 0;
+opacity: 0;
+
+}
+
+.switch__slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background-image:url(img/off.png);
+    background-size: 163px 125px;
+    background-repeat: no-repeat;
+    background-position: start;
+}
+
+.switch__slider::before {
+    content:"";
+    }
+
+    .switch__slider.try > img{          
+        position: relative;   
+        cursor: pointer;
+        top:-28px;    
+        left: 28px;
+        width: 160px;    
+        height: 175px;
+        transition: all 1s ease-out;
+        z-index: 3;
+          filter: drop-shadow(-15px 16px 4px #4e5e6c94);
+        }
+        
+        .switch__slider.gan > img{
+            position: relative;
+            cursor: pointer;
+            top: -28px;
+            left: 130px;
+            width: 160px;
+            height: 175px;
+            transition: all 1s ease-out;
+            z-index: 3;
+            filter: drop-shadow(-15px 16px 4px #4e5e6c94);;
+        }
+            
+        
+        .text__on {
+         color: #28a849e8;
+         font-weight:600;
+         text-align:center;
+         font-size: 50px;
+         z-index: 3;
+         position: absolute;
+         margin-left: 50px;
+         margin-right: auto;
+         top:23%;
+         font-family: 'Roboto', sans-serif;
+         
+        }
+        
+        .text__off{
+        color: #044b53e8;
+        font-weight:600;
+        text-align:center;
+        font-size: 50px;
+        z-index: 2;
+        position: absolute;
+        right: 82px;
+        top:30%;
+        font-family: 'Roboto', sans-serif;
+        }

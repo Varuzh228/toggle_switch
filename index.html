@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300&display=swap" rel="stylesheet">  
+
+<title>toggle switch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+<labbel class="switch"> 
+
+    <input type="checkbox" class="switch__input"><p class="text__on">ON</p>
+     <span class="switch__slider try"><img src="img/туалетка.png" 
+          style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></span>
+          <p class="text__off">OFF</p> 
+
+
+  </labbel>
+
+
+<script>
+
+let slider = document.querySelector('.switch__slider');
+
+
+slider.addEventListener('click', ()=> {
+
+if(slider.classList.contains('try')) {
+
+ slider.classList.add('gan')
+ slider.classList.remove('try')
+
+  } else {
+
+  slider.classList.add('try')
+  slider.classList.remove('gan')
+  }
+
+})
+
+</script>
+
+
+</body>
+</html>
